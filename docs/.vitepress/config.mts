@@ -2,7 +2,6 @@
 import { defineConfig } from 'vitepress'
 import { nav } from './configs/nav.mts'
 import { sidebar } from './configs/sidebar.mts'
-import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import katexPlugin from './katex-compat.js'
 // import strict from 'node:assert/strict'
 
@@ -25,7 +24,6 @@ export default defineConfig({
 
   markdown: {
     config: (md) => {
-      md.use(tabsMarkdownPlugin)
       md.use(katexPlugin, {
         throwOnError: false,
         strict: false

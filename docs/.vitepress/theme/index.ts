@@ -1,7 +1,6 @@
 // .vitepress/theme/index.ts
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 import 'katex/dist/katex.min.css'
 import EffectSwitch from './components/EffectSwitch.vue'
 import GoogleTranslate from './components/GoogleTranslate.vue'
@@ -21,8 +20,6 @@ export default {
     },
 
     enhanceApp(ctx) {
-        enhanceAppWithTabs(ctx.app);
-
         ctx.app.component("DarkWatcher", DarkWatcher);
         ctx.app.component("Lemma", Lemma);
 

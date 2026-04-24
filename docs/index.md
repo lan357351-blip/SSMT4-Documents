@@ -13,6 +13,9 @@ hero:
     - theme: alt
       text: SSMT的Blender插件TheHerta4下载地址
       link: https://github.com/StarBobis/TheHerta4
+    - theme: alt
+      text: TheHerta4蓝图版下载地址
+      link: https://github.com/xuhuan9102/TheHerta4
 
 features:
   - title: 简洁
